@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>CSS accessibility: Task 1</title>
+<style>
+body {
+background-color: #fff;
+color: #333;
+font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+padding: 1em;
+margin: 0;
+}
+
+* {
+box-sizing: border-box;
+}
+
+a {
+text-decoration: none;
+color: #666;
+outline: none;
+cursor: pointer;
+}
+
+a:hover,
+a:visited,
+a:focus {
+color: black;
+text-decoration: none;
+border-bottom: 1px solid black;
+}
+
+a:active {
+color: #333;
+background-color: teal;
+}
+
+li {
+list-style: none;
+}
+
+ul {
+display: flex;
+justify-content: space-evenly;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<ul>
+<li><a href="#" target="_parent" title="Animals Page Link">Animals</a></li>
+<li><a href="#" target="_parent" title="Computers Page Link">Computers</a></li>
+<li><a href="#"target="_parent" title="Diversity Page Link">Diversity and inclusion</a></li>
+<li><a href="#" target="_parent" title="Food Page Link">Food</a></li>
+<li><a href="#" target="_parent" title="Medicine Page Link">Medicine</a></li>
+<li><a href="#" target="_parent" title="Music Page Link">Music</a></li>
+</ul>
+
+</body>
+
+</html>
